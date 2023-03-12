@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Fintech
+
+  resources:
+    static-locations: classpath:/static/,classpath:/public/,classpath:/resources/,classpath:/META-INF/resources/,classpath:/META-INF/resources/webjars/
+
+  mvc:
+    static-path-pattern: /static/**
+
+  servlet:
+    context-path: /api
+
+  devtools:
+    restart:
+      enabled: true
+      exclude: /node_modules/**,/src/main/app/**
+
+  config:
+    activate:
+      on-profile: dev
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  boot:
+    admin:
+      ui:
+        enabled: true
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: production
+
+  boot:
+    admin:
+      ui:
+        enabled: false

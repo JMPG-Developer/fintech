@@ -17,17 +17,21 @@
 	<name>Fintech Application</name>
 	<description>Fintech</description>
 
-	<modules>
-		<module>fintech-connection</module>
-		<module>fintech-database</module>
-		<module>fintech-domain</module>
-		<module>fintech-library</module>
-		<module>fintech-rest</module>
-		<module>fintech-web</module>
-    </modules>
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+		<repository>
+			<id>eirslett</id>
+			<url>https://repo.eirslett.net/maven</url>
+		</repository>
+	</repositories>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -47,4 +51,11 @@
 		</dependency>
 	</dependencies>
 
+	<modules>
+		<module>fintech-connection</module>
+		<module>fintech-database</module>
+		<module>fintech-domain</module>
+		<module>fintech-rest</module>
+		<module>fintech-web</module>
+	</modules>
 </project>
