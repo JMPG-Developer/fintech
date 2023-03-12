@@ -1,4 +1,4 @@
-package es.jmpg.developer.fintech.web;
+package es.jmpg.developer.fintech;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

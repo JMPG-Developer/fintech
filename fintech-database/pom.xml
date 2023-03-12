@@ -11,7 +11,7 @@
 
     <artifactId>fintech-database</artifactId>
 
-    <name>Database</name>
+    <name>Fintech: Database</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -11,7 +11,7 @@
 
     <artifactId>fintech-connection</artifactId>
 
-    <name>API / SOAP Connection</name>
+    <name>Fintech: API / SOAP Connection</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

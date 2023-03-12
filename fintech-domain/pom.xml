@@ -12,12 +12,26 @@
 
     <artifactId>fintech-domain</artifactId>
 
-    <name>Domain</name>
+    <name>Fintech: Domain</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>es.jmpg.developer</groupId>
+            <artifactId>fintech-connection</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>es.jmpg.developer</groupId>
+            <artifactId>fintech-database</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
